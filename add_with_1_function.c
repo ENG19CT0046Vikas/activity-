@@ -10,7 +10,7 @@ int main()
   printf("enter number 2/n");
   scanf("%d",&y);
         
-  z=x + y;
+  z= x + y;
         
   printf("sum of %d and %d is = %d/n",x,y,z);
         
