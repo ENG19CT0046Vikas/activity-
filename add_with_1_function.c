@@ -5,14 +5,14 @@ int main()
 {
   int x,y,z;
   
-  printf("enter number 1/n");
+  printf("enter number 1");
   scanf("%d",&x);
-  printf("enter number 2/n");
+  printf("enter number 2");
   scanf("%d",&y);
         
   z= x + y;
         
-  printf("sum of %d and %d is = %d/n",x,y,z);
+  printf("sum of %d and %d is = %d",x,y,z);
         
   return 0;
         }
