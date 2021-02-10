@@ -2,29 +2,47 @@
 #include<stdio.h>
 #include<math.h>
 
- int dist(int x1,int x2,int y1,int y2)
- {
-            int x,y,result;
+float input()
+{
+  float temp;
+  scanf(“%f”,&temp);
+  return temp;
+}
 
-            x = (x2 - x1);
-            y =( y2 - y1);
-   
-            result =sqrt(x*x + y*y);
-            return result;
-  }
+float calc_dist(float a, float b)
+{
+  float result;
+
+result =sqrt(a*a + b*b);
+return result;
+}
+
+void display (float u, float v,float output)
+{
+printf(“the distance between the points is %f and %f is %2f”,u,v,output);
+}
 
 int main()
 {
-             int x1, y1,x2,y2,distance;
+ float u1,u2,v1,v2,u,v,dist;
+printf(“first point:/n”);
+printf(“enter the value for U:/n”);
+u1 = input();
+printf(“enter the value for V:/n”);
+v1 =input();
 
-             printf("Enter the coordinates for the first point:/n");
-             scanf("%d%d",&x1,&y1);
-    
-             printf("Enter the coardinates for the second point:/n");
-             scanf("%d%d",&x2,&y2);
+printf(“second point:/n”);
+printf(“enter the value for U:/n”);
+u2 =input();
+printf(“enter the value for V:/n”);
+v2 =input();
 
-             distance =dist(x1,x2,y1,y2);
-printf("the  distance between the two points is =%d/n",distance);
+u =(u2 - u1);
+v =(v2 - v1);
+
+dist =calc_dist(u,v);
+display(u,v,dist);
+
 return 0;
 }
 
