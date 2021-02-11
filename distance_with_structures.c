@@ -1,37 +1,41 @@
 //WAP to find the distance between two points using structures and 4 functions.
-#include <stdio.h>
+#include<stdio.h>
 #include<math.h>
 
-typedef struct points{
-float x, y;
-}Points;
+struct point
+{
+float u1,u2,v1,v2;
+}
+a,b; 
+float display(float firstpoint,float secondpoint)
+{
+float distance;
+distance =sqrt(firstpoint*firstpoint +secondpoint*secondpoint);
+return distance;
+}
 
-float calc_dist(Points a, Points b){
-return sqrt(((a.x - b.x)*(a.x - b.x))+((a.y - b.y)*(a.y - b.y)));
+int main()
+{
+float firstpoint,secondpoint,distance ;
+printf("first point:\n");
+printf("enter value for u:\n");
+scanf("%f",&a.u1);
+printf("enter the value for v:\n");
+scanf("%f",&a.v1);
 
-};
+printf("for second point:\n");
+printf("enter the value for u:\n");
+scanf("%f",&b.u2);
+printf("enter the value for v:\n");
+scanf("%f",&b.v2);
 
-Points input(Points temp){
-printf("X: ");
-scanf("%f",&temp.x);
-printf("\nY: ");
-scanf("%f",&temp.y);
-return temp;
-};
+firstpoint =b.u2 - a.u1;
+secondpoint = b.v2 -a.v1;
 
-void show_output(float dist){
-printf("The distance between the points is %.2f",dist);
-};
+distance = display(firstpoint,secondpoint);
 
+printf("the distance of two points is %f and %f\n",firstpoint,secondpoint,distance);
 
-int main(){
-Points a, b;
-float dist;
-printf("Please enter the Point 1 coordinates:\n");
-a = input(a);
-printf("Please enter the Point 2 coordinates:\n");
-b = input(b);
-dist = calc_dist(a,b);
-show_output(dist);
+return 0;
+}
 
-return 0;}
