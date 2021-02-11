@@ -23,16 +23,16 @@ output(frac1.num,frac2.den,frac2.num,frac2.den,num,den);
 
 int main()
 {
- printf("the first frac:/n");
-printf("enter value of num:/n");
+ printf("the first frac:\n");
+printf("enter value of num:\n");
 scanf("%d",& frac1.num);
-printf("enter value of den:/n");
+printf("enter value of den:\n");
 scanf("%d",& frac1.den);
 
-printf("the second frac:/n");
-printf("enter value of  num:/n");
+printf("the second frac:\n");
+printf("enter value of  num:\n");
 scanf("%d", & frac2.num);
-printf("enter value of den:/n");
+printf("enter value of den:\n");
 scanf("%d",& frac2.den);
 
 add(frac1.num,frac1.den,frac2.num,frac2.den);
